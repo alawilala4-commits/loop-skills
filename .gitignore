@@ -1,0 +1,24 @@
+# secrets
+.env
+.env.*
+auth.json
+*.secret
+*.token
+
+# backups and snapshots
+*.bak
+*.backup
+*.old
+state-snapshots/
+state.db
+state.db-shm
+state.db-wal
+
+# logs and temp
+*.log
+*.tmp
+*.cache
+
+# editor/system
+.DS_Store
+Thumbs.db
