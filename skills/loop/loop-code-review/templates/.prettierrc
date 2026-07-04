@@ -1,0 +1,22 @@
+# Template: Prettier Configuration (.prettierrc)
+# Usage: Copy to root & install: npm install --save-dev prettier
+
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "rangeStart": 0,
+  "rangeEnd": null,
+  "parser": "typescript",
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "preserve"
+}

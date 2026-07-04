@@ -1,0 +1,58 @@
+# Template: TypeScript Configuration (tsconfig.json)
+# Usage: Copy to root of project & adjust paths
+
+{
+  "compilerOptions": {
+    // LANGUAGE & ENVIRONMENT
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "useDefineForClassFields": true,
+
+    // MODULES
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // STRICT TYPE CHECKING
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    // ADDITIONAL CHECKS
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    // EMIT
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "inlineSourceMap": false,
+    "importsNotUsedAsValues": "error",
+
+    // INTEROP CONSTRAINTS
+    "isolatedModules": true,
+    "allowJs": false,
+    "checkJs": false,
+
+    // SKIP LIBS
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}

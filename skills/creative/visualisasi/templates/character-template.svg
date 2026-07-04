@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<defs>
+  <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#87CEEB"/>
+    <stop offset="100%" stop-color="#E0F7FA"/>
+  </linearGradient>
+  <linearGradient id="groundG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#52C41A"/>
+    <stop offset="100%" stop-color="#388E3C"/>
+  </linearGradient>
+  <radialGradient id="headG" cx="0.5" cy="0.4" r="0.6">
+    <stop offset="0%" stop-color="#A8E6CF"/>
+    <stop offset="100%" stop-color="#52C41A" stop-opacity="0.4"/>
+  </radialGradient>
+  <radialGradient id="cheekG" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#FF8A9B" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#FF8A9B" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="eyeG" cx="0.4" cy="0.4" r="0.6">
+    <stop offset="0%" stop-color="#7B1FA2"/>
+    <stop offset="100%" stop-color="#7B1FA2" stop-opacity="0.7"/>
+  </radialGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/></filter>
+</defs>
+
+<!-- Sky -->
+<rect width="512" height="512" fill="url(#skyG)"/>
+
+<!-- Clouds -->
+<circle cx="100" cy="60" r="30" fill="white" opacity="0.9"/>
+<circle cx="120" cy="55" r="22" fill="white" opacity="0.9"/>
+<circle cx="85" cy="65" r="18" fill="white" opacity="0.9"/>
+<circle cx="350" cy="90" r="25" fill="white" opacity="0.9"/>
+<circle cx="370" cy="85" r="18" fill="white" opacity="0.9"/>
+
+<!-- Ground -->
+<rect x="0" y="375" width="512" height="137" fill="url(#groundG)"/>
+
+<!-- Grass tufts -->
+<line x1="50" y1="378" x2="53" y2="360" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="120" y1="380" x2="118" y2="362" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="200" y1="376" x2="205" y2="358" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="300" y1="379" x2="297" y2="363" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="400" y1="377" x2="404" y2="359" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="470" y1="380" x2="467" y2="364" stroke="#33691E" stroke-width="1.5" stroke-linecap="round"/>
+
+<!-- Flowers -->
+<circle cx="70" cy="395" r="3" fill="#FF69B4"/><circle cx="73" cy="392" r="3" fill="#FF69B4"/><circle cx="67" cy="392" r="3" fill="#FF69B4"/><circle cx="70" cy="390" r="2" fill="#FFD700"/>
+<circle cx="420" cy="400" r="3" fill="#AB47BC"/><circle cx="423" cy="397" r="3" fill="#AB47BC"/><circle cx="417" cy="397" r="3" fill="#AB47BC"/><circle cx="420" cy="395" r="2" fill="#FFD700"/>
+
+<!-- === CHARACTER === -->
+<!-- Ground shadow -->
+<ellipse cx="256" cy="400" rx="45" ry="7" fill="black" opacity="0.15"/>
+
+<!-- Feet -->
+<ellipse cx="238" cy="390" rx="13" ry="7" fill="#2E7D32"/>
+<ellipse cx="274" cy="390" rx="13" ry="7" fill="#2E7D32"/>
+
+<!-- Body -->
+<ellipse cx="256" cy="350" rx="48" ry="55" fill="#A8E6CF" filter="url(#shadow)"/>
+<ellipse cx="246" cy="340" rx="22" ry="24" fill="#FFFDE7"/>
+
+<!-- Arms -->
+<ellipse cx="205" cy="335" rx="13" ry="10" fill="#A8E6CF"/>
+<ellipse cx="307" cy="335" rx="13" ry="10" fill="#A8E6CF"/>
+<!-- Leaf fingers -->
+<ellipse cx="195" cy="325" rx="7" ry="5" fill="#52C41A" transform="rotate(-30 195 325)"/>
+<ellipse cx="317" cy="325" rx="7" ry="5" fill="#52C41A" transform="rotate(30 317 325)"/>
+
+<!-- Head -->
+<circle cx="256" cy="270" r="60" fill="url(#headG)" filter="url(#shadow)"/>
+
+<!-- Cheeks -->
+<ellipse cx="226" cy="286" rx="10" ry="7" fill="url(#cheekG)"/>
+<ellipse cx="286" cy="286" rx="10" ry="7" fill="url(#cheekG)"/>
+
+<!-- Eyes -->
+<ellipse cx="239" cy="260" rx="11" ry="10" fill="white"/>
+<ellipse cx="273" cy="260" rx="11" ry="10" fill="white"/>
+<circle cx="241" cy="260" r="6" fill="url(#eyeG)"/>
+<circle cx="275" cy="260" r="6" fill="url(#eyeG)"/>
+<circle cx="239" cy="258" r="2.5" fill="white"/>
+<circle cx="277" cy="258" r="2.5" fill="white"/>
+
+<!-- Mouth -->
+<path d="M 248 284 Q 256 292 264 284" stroke="#C2185B" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+<!-- Leaf crown -->
+<ellipse cx="256" cy="218" rx="6" ry="14" fill="#52C41A"/>
+<line x1="256" y1="228" x2="256" y2="216" stroke="#2E7D32" stroke-width="1.5"/>
+<circle cx="256" cy="212" r="4" fill="#FF69B4"/>
+<circle cx="253" cy="209" r="1.5" fill="#FF69B4" opacity="0.7"/>
+<circle cx="259" cy="209" r="1.5" fill="#FF69B4" opacity="0.7"/>
+<circle cx="253" cy="215" r="1.5" fill="#FF69B4" opacity="0.7"/>
+<circle cx="259" cy="215" r="1.5" fill="#FF69B4" opacity="0.7"/>
+
+<!-- Sparkles -->
+<text x="180" y="230" font-size="8" fill="#FFD700" opacity="0.7">*</text>
+<text x="320" y="240" font-size="6" fill="#FFD700" opacity="0.7">*</text>
+<text x="200" y="310" font-size="7" fill="#FFD700" opacity="0.7">*</text>
+<text x="310" y="300" font-size="9" fill="#FFD700" opacity="0.7">*</text>
+
+<!-- Butterfly companion -->
+<g transform="translate(380,150)">
+  <ellipse cx="-7" cy="0" rx="7" ry="5" fill="#FF8C00"/>
+  <ellipse cx="7" cy="0" rx="7" ry="5" fill="#FF8C00"/>
+  <ellipse cx="-4" cy="-3" rx="4" ry="3" fill="#FF8C00" opacity="0.7"/>
+  <ellipse cx="4" cy="-3" rx="4" ry="3" fill="#FF8C00" opacity="0.7"/>
+  <line x1="0" y1="-4" x2="0" y2="6" stroke="#444" stroke-width="1"/>
+</g>
+
+</svg>
