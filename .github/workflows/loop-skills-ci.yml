@@ -11,3 +11,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate all SKILL.md files
         run: python3 scripts/validate_skills.py
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v1
+        with:
+          args: 'skills scaffolds docs'
+      - name: Semantic checks
+        run: python3 scripts/semantic_checks.py

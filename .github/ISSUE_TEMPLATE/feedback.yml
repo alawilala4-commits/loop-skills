@@ -1,0 +1,23 @@
+name: Skill Feedback
+description: Feedback for a loop-skills skill
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill name
+      placeholder: loop-backend
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [bug, improvement, docs, missing-scaffold, breaking-change]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+    validations:
+      required: true
