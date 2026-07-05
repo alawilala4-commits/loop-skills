@@ -1,18 +1,18 @@
-1|---
-2|name: visualisasi
-3|description: "Semua kebutuhan visualisasi: Wolfram Alpha query, architecture diagram, flowchart, concept map, data viz, infographic, sketch, generative art. Satu skill untuk semua."
-4|version: 1.0.0
-5|author: OWL Agent
-6|license: MIT
-7|dependencies: []
-8|platforms: [linux, macos, windows]
-9|metadata:
-10|  hermes:
-11|    tags: [visualization, diagram, chart, graph, architecture, flowchart, infographic, wolfram, data-viz, sketch, generative-art]
-12|    related_skills: [architecture-diagram, excalidraw, baoyu-infographic, p5js, manim-video, sketch]
-13|---
-14|
-15|# Visualisasi — Semua Visualisasi dalam Satu Skill
+---
+name: visualisasi
+description: "Semua kebutuhan visualisasi: Wolfram Alpha query, architecture diagram, flowchart, concept map, data viz, infographic, sketch, generative art. Satu skill untuk semua."
+version: 1.0.0
+author: OWL Agent
+license: MIT
+dependencies: []
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [visualization, diagram, chart, graph, architecture, flowchart, infographic, wolfram, data-viz, sketch, generative-art]
+    related_skills: [architecture-diagram, excalidraw, baoyu-infographic, p5js, manim-video, sketch]
+---
+
+# Visualisasi — Semua Visualisasi dalam Satu Skill
 16|
 17|Satu skill untuk semua kebutuhan visualisasi. Pilih mode sesuai kebutuhan:
 18|
