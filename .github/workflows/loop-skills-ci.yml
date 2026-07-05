@@ -1,0 +1,38 @@
+name: loop-skills CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  skill-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.44.1/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+      - name: Check every skill has SKILL.md
+        run: |
+          mapfile -t missing < <(find skills -mindepth 2 -maxdepth 2 -type d \( -path 'skills/mlops/*' -o -path 'skills/software-development/*' -o -path 'skills/research/*' -o -path 'skills/apple/*' -o -path 'skills/creative/*' -o -path 'skills/productivity/*' \) ! -exec test -f '{}/SKILL.md' \; -print)
+          if [ "${#missing[@]}" -ne 0 ]; then
+            printf 'Missing SKILL.md in:\n'; printf '%s\n' "${missing[@]}"
+            exit 1
+          fi
+      - name: Validate SKILL.md front matter
+        run: |
+          set -e
+          failed=0
+          while IFS= read -r f; do
+            if ! grep -q '^---$' "$f"; then
+              echo "Missing front matter: $f"
+              failed=1
+              continue
+            fi
+            if ! grep -q '^name:' "$f"; then
+              echo "Missing name field: $f"
+              failed=1
+            fi
+          done < <(find skills -mindepth 2 -maxdepth 2 -type f -name 'SKILL.md')
+          exit $failed
