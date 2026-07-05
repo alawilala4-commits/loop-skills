@@ -1,0 +1,13 @@
+name: loop-skills CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all SKILL.md files
+        run: python3 scripts/validate_skills.py
